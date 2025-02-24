@@ -36,3 +36,23 @@ span {
   text-align: center;
   padding-bottom: 20px;
 }
+
+/* ============== Digital Clock Design Part =================//  */
+#banner {
+  font-size: 22px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.myDate {
+  font-size: 40px;
+  background-color: orange;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+}

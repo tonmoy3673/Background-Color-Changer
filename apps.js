@@ -53,3 +53,17 @@ const isValidColor =(color)=>{
 
 // =========== Call the Function =======//
 ChangeBoxColor();
+
+// ================== Digital Clock Function =================/
+const setDigitalClock =()=>{
+  const clock = document.getElementById('clock');
+  const dateDiv = document.getElementById('date')
+  let date = new Date();
+  setInterval(function(){
+    dateDiv.innerText= date.toDateString()
+    clock.innerText= date.toLocaleTimeString()
+  },1000)
+}
+
+// ================ Call Digital Clock Function =============//
+setDigitalClock();
