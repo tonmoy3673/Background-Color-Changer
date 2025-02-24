@@ -8,6 +8,25 @@
 
     <title>JavaScript Background Color Switcher</title>
   </head>
+  <style>
+    body {
+      background-color: #212121;
+      color: #fff;
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    #clock {
+      font-size: 40px;
+      background-color: orange;
+      padding: 20px 50px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
   <body id="body">
     <div class="canvas">
       <h1>Color Scheme Switcher</h1>
@@ -19,6 +38,21 @@
         Try clicking on one of the colors above
         <span>to change the background color of this page!</span>
       </h2>
+    </div>
+    <!-- ====================== Button Color Changer ================== -->
+    <div class="box-color">
+      <div id="box"></div>
+      <h2>Change Box Color</h2>
+      <div>
+        <input id="input" type="text" placeholder="Type Color Name" />
+        <button id="btn">Change</button>
+      </div>
+    </div>
+
+    <!-- =============== Digital Clock ====================== -->
+    <div class="center">
+      <div id="banner"><span>Your local time</span></div>
+      <div id="clock"></div>
     </div>
     <script src="apps.js"></script>
   </body>
